@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cont-cards{
+    border-color: 3px brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 2rem;
+}
+.card{
+    border-color: 3px blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
