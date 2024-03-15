@@ -5,10 +5,13 @@
 }
 
 .cont-cards{
-    border-color: 3px brown;
+    border-color: 3px rgb(221, 26, 26);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
+    flex-direction: row;
+    fl
+
     
     gap: 2rem;
 }
