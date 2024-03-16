@@ -4,6 +4,10 @@
    box-sizing: border-box; 
 }
 
+body{
+    height: 100vh;
+}
+
 .Section1{
     background-color: aquamarine;
     display: flex;
@@ -35,7 +39,9 @@
     flex-wrap: wrap;
 
 }
-.Card{
+.Card_s1{
     background-color: bisque;
     border-radius: 15dvh;
+    width: 45%;
+
 }
