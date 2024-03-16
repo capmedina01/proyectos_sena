@@ -1,0 +1,41 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+.Section1{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2 rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.Section2{
+    background-color:blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2 rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.Section3{
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2 rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.Card{
+    background-color: bisque;
+    border-radius: 15dvh;
+}
