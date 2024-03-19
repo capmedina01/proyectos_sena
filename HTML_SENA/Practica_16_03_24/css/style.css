@@ -8,14 +8,13 @@ body{
     height: 100vh;
 }
 
-.Section1{
-    background-color: aquamarine;
+.mainClass{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2 rem;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction:column;
+}
+
+.Section1{
+    display: flex;
 
 }
 
