@@ -4,19 +4,40 @@
    box-sizing: border-box; 
 }
 
-body{
-    height: 100vh;
-}
 
-.mainClass{
+
+ main{
+    height: 100vh;
     display: flex;
     flex-direction:column;
+    background-color: rgb(211, 252, 225);
+    
 }
 
 .Section1{
+    background-color: rgb(236, 154, 59);
+    height: 33vh;
     display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    flex-wrap: wrap;  
+    gap: 2rem;
+     
 
 }
+.Cards1{
+    background-color: gray;
+    height: 30VH;
+    width: 30VH;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+    
+
+}
+
 
 .Section2{
     background-color:blue;
@@ -36,11 +57,5 @@ body{
     gap: 2 rem;
     flex-direction: row;
     flex-wrap: wrap;
-
-}
-.Card_s1{
-    background-color: bisque;
-    border-radius: 15dvh;
-    width: 45%;
 
 }
