@@ -1,0 +1,61 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+
+
+ main{
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    background-color: rgb(211, 252, 225);
+    
+}
+
+.Section1{
+    background-color: rgb(236, 154, 59);
+    height: 33vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    flex-wrap: wrap;  
+    gap: 2rem;
+     
+
+}
+.Cards1{
+    background-color: gray;
+    height: 30VH;
+    width: 30VH;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+    
+
+}
+
+
+.Section2{
+    background-color:blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2 rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.Section3{
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2 rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
