@@ -13,12 +13,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;    
+    background-color: white;  
+    padding: 5%;  
     
 }
 
 nav a{
-    padding-right: 5%;
+    padding-right: 10%;
 }
 
 a{
