@@ -14,17 +14,47 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: white;  
-    padding: 5%;  
+    
     
 }
 
+nav{
+    display: flex;
+    padding-right: 15%;
+}
+
 nav a{
-    padding-right: 10%;
+    
+    padding: 10%;
 }
 
 a{
     text-decoration: none;
+    color: black;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SesionIni{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 222, 222);
+    padding: 15%;
+}
+.SesionIni article{
+    padding:5%;
+}
+
+.TextoIni{
+    display: flex;
+    flex-direction: column;
+    
+}
 
 
