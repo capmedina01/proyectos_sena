@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+  width: 100vw;  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF; /* Blanco */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+header {
+  background-color: rgb(31, 143, 255); /* Azul */
+  width: 100%;
+  height: 20%;
+  color: #FFFFFF; /* Blanco */
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+.anchor {
+  background: none;
+  color: black;
+}
+
+/* Main */
+.main {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+}
+
+/* Sección de introducción */
+.intro {
+  margin-bottom: 2rem;
+}
+
+/* Call to Action */
+.cta {
+  text-align: center;
+}
+
+/* Botón */
+button {
+  background-color: rgb(31, 143, 255); /* Blanco */
+  padding: 10px 20px;  
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+i {
+  font-size: 2rem;
+  color: green;
+}
+
+/* Footer */
+.footer{
+  background-color: #1e90ff;
+  color: #FFFFFF; /* Blanco */
+  text-align: center;  
+  width: 100%;
+  height: 10%;
+  margin-top: 1rem;
+}
+
+/* Enlaces sociales */
+.social a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.bx bxl-youtube {
+  color: red;
+}
+
