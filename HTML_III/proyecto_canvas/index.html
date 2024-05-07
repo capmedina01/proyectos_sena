@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presentación tipo Canvas</title>
+<style>
+  canvas {
+    border: 1px solid black;
+  }
+</style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="800" height="600"></canvas>
+
+<script>
+  // Obtenemos el canvas y el contexto
+  var canvas = document.getElementById('myCanvas');
+  var ctx = canvas.getContext('2d');
+
+  // Array de diapositivas
+  var slides = [
+    { backgroundColor: 'lightblue', text: 'Primera diapositiva' },
+    { backgroundColor: 'lightgreen', text: 'Segunda diapositiva' },
+    { backgroundColor: 'lightcoral', text: 'Tercera diapositiva' }
+  ];
+
+  // Función para dibujar una diapositiva
+  function drawSlide(slide) {
+    ctx.fillStyle = slide.backgroundColor;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = 'black';
+    ctx.font = '30px Arial';
+    ctx.fillText(slide.text, 50, 50);
+  }
+
+  // Función para cambiar de diapositiva
+  function changeSlide(index) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawSlide(slides[index]);
+  }
+
+  // Dibujamos la primera diapositiva al cargar la página
+  drawSlide(slides[0]);
+
+  // Evento para cambiar de diapositiva al hacer clic en el canvas
+  var currentSlideIndex = 0;
+  canvas.addEventListener('click', function() {
+    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+    changeSlide(currentSlideIndex);
+  });
+
+</script>
+
+</body>
+</html>

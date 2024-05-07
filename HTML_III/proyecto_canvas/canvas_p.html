@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presentación tipo Canvas con Imagen</title>
+<style>
+  canvas {
+    border: 1px solid black;
+  }
+</style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="800" height="600"></canvas>
+
+<script>
+  var canvas = document.getElementById('myCanvas');
+  var ctx = canvas.getContext('2d');
+
+  var slides = [
+    { backgroundColor: 'lightblue', text: 'Primera diapositiva', image: 'assets/img/clientes.PNG' },
+    { backgroundColor: 'lightgreen', text: 'Segunda diapositiva', image: 'imagen2.jpg' },
+    { backgroundColor: 'lightcoral', text: 'Tercera diapositiva', image: 'imagen3.jpg' }
+  ];
+
+  function drawSlide(slide) {
+    ctx.fillStyle = slide.backgroundColor;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = 'black';
+    ctx.font = '30px Arial';
+    ctx.fillText(slide.text, 50, 50);
+
+    // Cargar la imagen y dibujarla en el canvas
+    var img = new Image();
+    img.src = slide.image;
+    img.onload = function() {
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    };
+  }
+
+  function changeSlide(index) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawSlide(slides[index]);
+  }
+
+  drawSlide(slides[0]);
+
+  var currentSlideIndex = 0;
+  canvas.addEventListener('click', function() {
+    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+    changeSlide(currentSlideIndex);
+  });
+
+</script>
+
+</body>
+</html>
